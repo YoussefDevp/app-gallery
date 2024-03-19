@@ -14,12 +14,22 @@ var connection = mysql.createConnection({
   });
   connection.connect();
 
-  app.get('/imagen/blog', (req, res) => {
-    connection.query('SELECT * FROM `imagen` WHERE cartgory="blog";', function (error, results, fields) {
+
+
+
+  app.get('/blog', (req, res) => {
+    connection.query('SELECT * FROM `content` WHERE category="blog"', function (error, results, fields) {
       if (error) throw error;
       res.status(200).json(results)
     });
   })
+  app.get('/venta', (req, res) => {
+    connection.query('SELECT * FROM `content` WHERE category="venta"', function (error, results, fields) {
+      if (error) throw error;
+      res.status(200).json(results)
+    });
+  })
+  
 
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
