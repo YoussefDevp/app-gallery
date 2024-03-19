@@ -1,6 +1,5 @@
-const blog = "http://localhost:3000/blog";
+const blog = "http://localhost:3000/blog/posts";
 const main = document.querySelector("#main");
-
 
 const getArticle = async () => {
     const res = await fetch(blog);
@@ -13,13 +12,15 @@ const displayArticle = async () => {
     const playload = await getArticle();
 
     let displayArticle = playload.map((object) => {
-        const {title,image,paragraph} = object;
+        const {titulo,image,paragraph
+        } = object;
 
     return ` 
     <article id="article"> 
-    <h1>${title}</h1>
+    <h1>${titulo}</h1>
     <img src="${image}">
-    <p>${paragraph}</p> 
+    <p>${paragraph
+    }</p> 
     </article>
     
     `
@@ -27,7 +28,7 @@ const displayArticle = async () => {
 
 main.innerHTML = displayArticle;
 }
-
+    
 displayArticle()
 
 

@@ -151,13 +151,22 @@ footer .social-links i:not(:last-of-type) {
 }
 
 #venta  {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
+  padding: 3rem;
 }
 
 #venta img {
-  max-width: 100%;
+  /* max-width: 100%; */
   width: 480px;
+}
+
+
+.img-grid {
+  display: grid;
+  gap: 1rem;  
+  grid-template-columns: repeat(4  ,280px);
+  justify-content: center;
+  margin:0 auto;
+
 }
 
 

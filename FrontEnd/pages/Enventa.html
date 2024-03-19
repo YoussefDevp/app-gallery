@@ -53,14 +53,19 @@ const displayArticle = async () => {
     const playload = await getArticle();
 
     let displayArticle = playload.map((object) => {
-        const {title,image,paragraph} = object;
+        const {titulo,images,paragraph} = object;
+    return `   
+     <h1>${titulo}</h1>                     
+        <p>${paragraph} </p> 
+        <div class="img-grid">
+          
+        
+          ${images.map( (url) => {
+            return `<img src="${url}">  `
+          })    
+        } 
 
-    return ` 
-    
-     <h1>${title}</h1>                    
-        <p>${paragraph}</p> 
-           
-    <img src="${image}"> 
+    </div>
     `
 }).join("");
 

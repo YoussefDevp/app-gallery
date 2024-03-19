@@ -23,7 +23,9 @@
           </ul>
       </nav>
 
+      <div id="artista">
 
+      </div>
       <footer>
         <div class="m-width">
 
@@ -39,4 +41,35 @@
             All Rights Reserved</p> 
       </footer> 
 </body>
+<script>
+const blog = "http://localhost:3000/artistas";
+const main = document.querySelector("#artista");
+
+const getArticle = async () => {
+    const res = await fetch(blog);
+    const data = await res.json();
+    console.log(data)
+    return data
+}
+
+const displayArticle = async () => {
+    const playload = await getArticle();
+
+    let displayArticle = playload.map((object) => {
+        const {paragraph,imagen} = object;
+
+    return ` 
+    <article id="article"> 
+    <p>${paragraph}</p> 
+    </article>
+    
+    `
+}).join("");
+
+main.innerHTML = displayArticle;
+}
+    
+displayArticle()
+
+</script>
 </html>
