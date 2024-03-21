@@ -20,7 +20,9 @@ return `
 <div>
     <img src="${image}">
         <p>${paragraph}</p> 
-</div>
+       
+    </div>
+
 `
 
 }).join("");

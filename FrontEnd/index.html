@@ -29,52 +29,17 @@
     <main class="main">   
     </main>
     <footer>
-        <div class="m-width">
+        <div>
             <img src="./img/logo/1.png" alt="" srcset="">
             <div class="social-links">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-instagram"></i>
-            </div>            
-        </div>
+            </div>    
+        </div>        
         <p> Copyright  &copy;  2024 Artist
             All Rights Reserved</p> 
       </footer> 
 </body>
 </html>
 <script src="./scripts/home.js"></script>
-<!-- <script>
-    const blog = "http://localhost:3000/home";
-    const main = document.querySelector(".main");
-    const title = document.querySelector("#title");
-
-
-const getArticle = async () => {
-    const res = await fetch(blog);
-    const data = await res.json();
-    console.log(data)
-    return data
-}
-
-const displayArticle = async () => {
-    const playload = await getArticle();
-    title.innerText = playload.titulo.titulo;
-
-    let displayArticle = playload?.textresults?.map((object) => {
-
-        const {image,paragraph} = object;
-
-    return ` 
-    <div>
-        <img src="${image}">
-            <p>${paragraph}</p> 
-    </div>
-    
-    `
-}).join("");
-
-main.innerHTML = displayArticle;
-}
-
-displayArticle()
-</script> -->

@@ -11,8 +11,8 @@
         display: flex;
         list-style: none;
 
-        @media only screen and (max-width: 800px) {
-            #nav ul {
+        @media only screen and (max-width: 860px) {
+            & {
               display: none;
             }
           }

@@ -1,21 +1,30 @@
 footer {
     background: black;
-    /* height: 200px; */
-    padding: 2rem 0;
+    padding: 1rem 3rem;
+    margin: 0 auto;
 
     p {
         color: white;
         text-align: center;
       }
-      
-      .social-links {
-        color: white;
-        font-size: 130%;
 
-        i:not(:last-of-type) {
-            margin-right: 1rem;
-          }
+      div {
+
+        display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+        .social-links {
+          color: white;
+          font-size: 130%;
+  
+          i:not(:last-of-type) {
+              margin-right: 1rem;
+            }
+        }
       }
+      
+      
       
   }
   
