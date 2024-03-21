@@ -1,0 +1,21 @@
+footer {
+    background: black;
+    /* height: 200px; */
+    padding: 2rem 0;
+
+    p {
+        color: white;
+        text-align: center;
+      }
+      
+      .social-links {
+        color: white;
+        font-size: 130%;
+
+        i:not(:last-of-type) {
+            margin-right: 1rem;
+          }
+      }
+      
+  }
+  
