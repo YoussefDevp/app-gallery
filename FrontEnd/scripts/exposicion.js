@@ -17,7 +17,7 @@ const displayArticle = async () => {
         const {image} = object;
       
     return ` 
-    <div> 
+    <div id="expo"> 
 
     <img src="${image}" alt="">
     </div>

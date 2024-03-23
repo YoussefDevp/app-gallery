@@ -119,11 +119,8 @@ var connection = mysql.createConnection({
           }
           )
           res.status(200).json({textresults:textresults})
-          console.log(textresults)  
-          // console.log(tiTresults)
-         
-        });
-      
+          console.log(textresults)       
+        });   
       });
      
     });

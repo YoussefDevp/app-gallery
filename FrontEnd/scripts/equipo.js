@@ -15,14 +15,14 @@ const displayArticle = async () => {
     // title.innerText = playload.title.title;
 
     let displayArticle = playload.textresults.map((object) => {
-        const {paragraph,image,title} = object;
+        const {paragraph,image} = object;
         // <h2>${title}</h2>
     return ` 
-    <article id="article"> 
-     <h2>${title}</h2>
+    <div> 
+
     <img src="${image}" alt="">
     <p>${paragraph}</p> 
-    </article>
+    </div>
     
     `
 }).join("");

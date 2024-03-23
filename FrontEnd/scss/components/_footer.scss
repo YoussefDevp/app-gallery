@@ -1,10 +1,10 @@
 footer {
-    background: black;
+    background: $deepBlack;
     padding: 1rem 3rem;
     margin: 0 auto;
 
     p {
-        color: white;
+        color: $white;
         text-align: center;
       }
 
@@ -15,16 +15,21 @@ footer {
           justify-content: space-between;
 
         .social-links {
-          color: white;
+          color: $white;
           font-size: 130%;
+
+
+          i:hover {
+            color: $gold;
+            cursor: pointer;
+            transition: $transition;
+            transform: scale(1.1);
+          }
   
           i:not(:last-of-type) {
               margin-right: 1rem;
             }
         }
-      }
-      
-      
-      
+      }     
   }
   
