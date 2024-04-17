@@ -3,7 +3,7 @@ import { creaMenu, creaFooter } from "./compnents.js";
 creaMenu()
 creaFooter(document.querySelector('footer'))
 
-const blog = "http://localhost:3000/galeria";
+const blog = "https://stellular-kringle-54ef61.netlify.app/.netlify/functions/api/galeria";
 const main = document.querySelector("#main");
 
 

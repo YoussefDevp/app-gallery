@@ -4,7 +4,7 @@ creaMenu()
 creaFooter(document.querySelector('footer'))
 
 
-const blog = "http://localhost:3000/expo";
+const blog = "https://stellular-kringle-54ef61.netlify.app/.netlify/functions/api/expo";
 const main = document.querySelector("#main");
 
 
