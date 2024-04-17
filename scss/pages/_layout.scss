@@ -1,0 +1,12 @@
+.expo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+#contact {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    
+}

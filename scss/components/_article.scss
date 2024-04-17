@@ -1,0 +1,29 @@
+article {
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: $shadow;
+    h1 {
+        font-size: 280%;
+        text-align: center;
+        margin: 3rem 0;
+      }
+      img {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        width: 50%;
+        float: right;
+        box-shadow: #B4B4B8 5px 5px, #C7C8CC 10px 10px, #E3E1D9 15px 15px, #F2EFE5 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        /* arriba | derecha | abajo | izquierda */
+        margin: 0 0 2rem 2rem;
+      }
+      p {
+        line-height: 2;
+        font-size: 110%;
+        /* display: inline; */
+      }
+      &:nth-child(2) img {
+        float: left;
+        margin: 0 2rem 2rem 0;
+        box-shadow: #B4B4B8 -5px 5px, #C7C8CC -10px 10px, #E3E1D9 -15px 15px, #F2EFE5 -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+      }
+  }

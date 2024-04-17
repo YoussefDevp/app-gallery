@@ -1,0 +1,33 @@
+form {
+    padding: 2rem;
+    background-color: $deepBlack;
+    border-radius: 25px;
+    color: $gold;
+    width: 35%;
+    font-weight: 600;
+    box-shadow: $shadow;
+
+    input,button, textarea {
+        margin-top: 1rem;
+        width: 100%;
+        padding: .5rem .2rem;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type=submit] {
+        background: white;
+        color: #C9AB81;
+        font-weight: 600;
+        transition: all 200ms ease-in-out;
+        &:hover {
+            background: white;
+            background: $black;
+            border: solid 1px white;
+            cursor: pointer;
+        }
+    }
+   
+}

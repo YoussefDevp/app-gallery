@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav">
+        
+      </nav>
+
+      <h1 class="p-heading">
+        Contacta con Nosotros
+    </h1>
+
+     <main>
+        <div id="contact">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46453.282412024855!2d-2.015082606690996!3d43.307347715662374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51affe3b68fe15%3A0xe43ec55994864649!2zU2FudCBTZWJhc3Rpw6AsIEd1aXDDunNjb2E!5e0!3m2!1sca!2ses!4v1711318335483!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+           <form action="/submit_form" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>       
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required><br><br>       
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>         
+                <label for="mensaje">¿Cómo podemos ayudarte?</label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>        
+                <input type="submit" value="Enviar">
+            </form> 
+        </div>
+         </main>
+      
+        
+      <footer>
+        
+      </footer>   
+</body>
+<script type="module" src="../scripts/contacto.js"></script>
+</html>
